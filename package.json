@@ -4,7 +4,7 @@
   "description": "AWS ELB interaction library",
   "main": "src/index.js",
   "scripts": {
-    "test": "tape ./test/**/**/*-test.js | tap-spec"
+    "test": "tape ./test/**/**/*-test.js | tap-spec && npx stryker run"
   },
   "repository": {
     "type": "git",
