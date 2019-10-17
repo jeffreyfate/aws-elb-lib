@@ -1,5 +1,5 @@
 {
-  "name": "aws-elb-lib",
+  "name": "@jeffthefate/aws-elb-lib",
   "version": "0.0.1",
   "description": "AWS ELB interaction library",
   "main": "src/index.js",
@@ -40,5 +40,8 @@
     "@aws": "src/aws",
     "@lib": "src/lib",
     "@mod": "src/mod"
+  },
+  "directories": {
+    "test": "test"
   }
 }
