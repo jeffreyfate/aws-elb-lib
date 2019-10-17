@@ -1,6 +1,6 @@
 {
   "name": "aws-elb-lib",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "AWS ELB interaction library",
   "main": "src/index.js",
   "scripts": {

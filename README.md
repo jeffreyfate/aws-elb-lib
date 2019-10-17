@@ -5,3 +5,22 @@ Library to interact with AWS ELB
 
 There are lots of little tasks you might want to do with your AWS ELBs that doesn't come out of the box with the AWS SDK. Here what is covered using this library:
 
+Get Target Group ARNs, given Names
+
+## Installation
+
+  `npm install @jeffthefate/aws-elb-lib`
+
+## Usage
+
+    const {getTargetGroupArns} = require('@jeffthefate/aws-elb-lib');
+
+    const arnArray = getTargetGroupArns(['name1', 'name2'])
+
+## Tests
+
+  `npm test`
+
+## Contributing
+
+In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.
