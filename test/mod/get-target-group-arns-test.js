@@ -1,6 +1,5 @@
 const test = require('tape')
-const appRoot = require('app-root-path');
-const {getTargetGroupArns} = require(appRoot + '/src/mod/get-target-group-arns')
+const {getTargetGroupArns} = require('../../../src/mod/get-target-group-arns')
 
 /**
  * getTargetGroupArns

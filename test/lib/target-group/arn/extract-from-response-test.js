@@ -1,6 +1,5 @@
 const test = require('tape')
-const appRoot = require('app-root-path');
-const {extractArns} = require(appRoot + '/src/lib/aws/target-group/arn/extract-from-response')
+const {extractArns} = require('../../../src/lib/aws/target-group/arn/extract-from-response')
 
 test('extractArns extracts ARNs from TargetGroups array', t => {
   const response = { TargetGroups: [{ TargetGroupArn: 'targetGroupArn'}]}
