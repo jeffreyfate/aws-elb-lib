@@ -1,6 +1,6 @@
-require('module-alias/register')
 const test = require('tape')
-const {extractArns} = require('@lib/aws/target-group/arn/extract-from-response')
+const appRoot = require('app-root-path');
+const {extractArns} = require(appRoot + '/src/lib/aws/target-group/arn/extract-from-response')
 
 test('extractArns extracts ARNs from TargetGroups array', t => {
   const response = { TargetGroups: [{ TargetGroupArn: 'targetGroupArn'}]}

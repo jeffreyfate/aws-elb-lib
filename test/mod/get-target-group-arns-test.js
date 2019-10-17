@@ -1,6 +1,6 @@
-require('module-alias/register')
 const test = require('tape')
-const {getTargetGroupArns} = require('@mod/get-target-group-arns')
+const appRoot = require('app-root-path');
+const {getTargetGroupArns} = require(appRoot + '/src/mod/get-target-group-arns')
 
 /**
  * getTargetGroupArns

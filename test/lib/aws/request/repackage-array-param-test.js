@@ -1,6 +1,6 @@
-require('module-alias/register')
 const test = require('tape')
-const {repackageArrayParam} = require('@lib/aws/request/repackage-array-param')
+const appRoot = require('app-root-path');
+const {repackageArrayParam} = require(appRoot + '/src/lib/aws/request/repackage-array-param')
 
 /**
  * repackageArrayParam
