@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# Reports (stryker and others)
+reports
+
+# VS Code History
+.history

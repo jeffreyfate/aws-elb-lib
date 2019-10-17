@@ -1,0 +1,44 @@
+{
+  "name": "aws-elb-lib",
+  "version": "0.0.0",
+  "description": "AWS ELB interaction library",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "tape ./test/**/**/*-test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyfate/aws-elb-lib.git"
+  },
+  "keywords": [
+    "aws",
+    "elb",
+    "lib"
+  ],
+  "engines": {
+    "node": ">=10.16.3"
+  },
+  "author": "Jeffrey Fate <fatejd@gmail.com> (https://www.jeffreyfate.com)",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jeffreyfate/aws-elb-lib/issues"
+  },
+  "homepage": "https://github.com/jeffreyfate/aws-elb-lib#readme",
+  "devDependencies": {
+    "@stryker-mutator/core": "^2.1.0",
+    "@stryker-mutator/html-reporter": "^2.1.0",
+    "@stryker-mutator/javascript-mutator": "^2.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.551.0",
+    "modular-aws-sdk-elb": "^2.551.0",
+    "module-alias": "2.2.2"
+  },
+  "_moduleAliases": {
+    "@aws": "src/aws",
+    "@lib": "src/lib",
+    "@mod": "src/mod"
+  }
+}
