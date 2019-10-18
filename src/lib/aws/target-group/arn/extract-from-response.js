@@ -1,6 +1,7 @@
 /**
  * Extract the ARN values from the describeTargetGroups response
- * @param {Object} response from describeTargetGroups
+ * 
+ * @param {Object} response - from describeTargetGroups with all target groups that matched
  * @returns {Array} target group ARNs, empty if none found
  */
 exports.extractArns = function (response) {

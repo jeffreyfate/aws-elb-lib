@@ -7,9 +7,7 @@ const {getTargetGroupArnsByName} = require('../../src/mod/get-target-group-arns-
 test('getTargetGroupArnsByName responds from array of target group names with array of target group ARNs', async t => {
   const params = []
   const repackageArrayParam = (keyName, array) => ({[keyName]: array})
-  const elbDescribeTargetGroups = async params => {
-    t.deepEqual(params, {'Names':[]})
-  }
+  const elbDescribeTargetGroups = async params => t.deepEqual(params, {'Names':[]})
   const extractArns = response => ['arn']
 
   const result = await getTargetGroupArnsByName(params, repackageArrayParam, elbDescribeTargetGroups, extractArns)
