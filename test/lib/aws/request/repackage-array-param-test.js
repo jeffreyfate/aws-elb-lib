@@ -1,5 +1,5 @@
 const test = require('tape')
-const {repackageArrayParam} = require('../../../src/lib/aws/request/repackage-array-param')
+const {repackageArrayParam} = require('../../../../src/lib/aws/request/repackage-array-param')
 
 /**
  * repackageArrayParam

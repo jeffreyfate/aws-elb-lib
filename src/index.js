@@ -1,8 +1,8 @@
 const {repackageArrayParam} = require('./lib/aws/request/repackage-array-param')
 const {elbDescribeTargetGroups} = require('./aws/elb')
 const {extractArns} = require('./lib/aws/target-group/arn/extract-from-response')
-const {getTargetGroupArns} = require('./mod/get-target-group-arns')
+const {getTargetGroupArnsByName} = require('./mod/get-target-group-arns-by-name')
 
-exports.getTargetGroupArns = async function(names) {
-  return getTargetGroupArns(names, repackageArrayParam, elbDescribeTargetGroups, extractArns)
+exports.getTargetGroupArnsByName = async function(names) {
+  return getTargetGroupArnsByName(names, repackageArrayParam, elbDescribeTargetGroups, extractArns)
 }

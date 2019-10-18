@@ -1,3 +1,13 @@
 language: node_js
 node_js:
   - lts/*
+jobs:
+  include:
+    - stage: "Test"
+      name: "Unit Test"
+      script: npm test
+    - script: npx stryker run
+      name: "Mutation Test"
+    - stage: version
+      name: "Semantic Version"
+      script: npx semantic-release
