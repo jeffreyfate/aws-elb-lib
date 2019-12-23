@@ -33,7 +33,7 @@
     "@stryker-mutator/javascript-mutator": "^2.1.0",
     "commitizen": "4.0.3",
     "cz-conventional-changelog": "3.0.2",
-    "semantic-release": "^15.0.0",
+    "semantic-release": "^15.14.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
   },
