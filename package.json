@@ -32,7 +32,7 @@
     "@stryker-mutator/html-reporter": "^2.1.0",
     "@stryker-mutator/javascript-mutator": "^2.1.0",
     "commitizen": "4.0.3",
-    "cz-conventional-changelog": "3.0.2",
+    "cz-conventional-changelog": "3.2.1",
     "semantic-release": "^15.0.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
